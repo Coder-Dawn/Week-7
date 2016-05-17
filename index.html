@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Train Time</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
+
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+
+<script src="https://code.jquery.com/jquery.js"></script>
+
+<!-- Link to Moment.js should go here -->
+<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+<div class="container">
+  <div class="well well-lg"><H2>DAWN'S TRAIN SCHEDULE</H2></div>
+  <div class="alert alert-info" role="alert"><B>CURRENT TRAIN SCHEDULE</B></div>           
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Train Name</th>
+        <th>Destination</th>
+        <th>Frequency (min)</th>
+        <th>Next Arrival</th>
+        <th>Minutes Away</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Amtrak Cascades</td>
+        <td>Seattle</td>
+        <td>25</td>
+        <td>05.35 PM</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <td>California Zephyr</td>
+        <td>San Francisco</td>
+        <td>30</td>
+        <td>1.39 PM</td>
+        <td>20</td>
+      </tr>
+      <tr>
+        <td>Capitol Corridor</td>
+        <td>Reno</td>
+        <td>45</td>
+        <td>2.30 PM</td>
+        <td>15</td>
+      </tr>
+      <tr>
+        <td>Crescent</td>
+        <td>New York</td>
+        <td>65</td>
+        <td>5.50 PM</td>
+        <td>12</td>
+      </tr>
+      <tr>
+        <td>Empire Builder</td>
+        <td>Minneapolis</td>
+        <td>30</td>
+        <td>1.25 AM</td>
+        <td>50</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</br>
+
+<div class="container">
+   <div class="alert alert-info" role="alert"><B>ADD TRAIN</B></div>   
+  <form class="form-inline">
+  <div class="form-group">
+    <label for="exampleInputName2">Train Name</label>
+    <input type="text" class="form-control" id="exampleInputName2" placeholder=" ">
+  </div>
+  <form class="form-inline">
+  <div class="form-group">
+    <label for="exampleInputName2">Destination</label>
+    <input type="text" class="form-control" id="exampleInputName2" placeholder=" ">
+  </div>
+  <form class="form-inline">
+  <div class="form-group">
+    <label for="exampleInputName2">First Train Time (HHmm - military time)</label>
+    <input type="text" class="form-control" id="exampleInputName2" placeholder=" ">
+  </div>
+  <form class="form-inline">
+  <div class="form-group">
+    <label for="exampleInputName2">Frequency (min)</label>
+    <input type="text" class="form-control" id="exampleInputName2" placeholder=" ">
+  </div>
+   <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+
+</body>
+
+</body>
+</html>
